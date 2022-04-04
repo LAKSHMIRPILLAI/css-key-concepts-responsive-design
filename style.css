@@ -6,15 +6,41 @@
     --camel: #D8A47F;
 }
 
-body {
-    background-color: var(--light);
-}
+html {
+    font-size: 100%; // base size 100% usually means 16px
+  }
+  
+.h1 {
+    font-size:  2.25rem; 
+  }
+
+  .p {
+    font-size:  0.75 rem; 
+  }
+
+.card-container { 
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+
+    
+   
 
 .card {
     padding: 10px;
     margin: 10px;
+    max-width: 250px;
+    display: inline-block;
+    flex: 0 0 100%;
+    display: flex;  /* Necessary for the cards to have the same height */
+    flex-direction: column;  /* To be able to push the childrens down */
+  
 }
 
-img {
-    width: 250px;
-}
+.pet-pic{
+    max-width: 250px;
+    max-height: 125px;
+  }
